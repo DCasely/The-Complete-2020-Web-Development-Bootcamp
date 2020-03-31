@@ -1,0 +1,50 @@
+/******* TAG SELECTORS *******/
+
+h1 {
+  color: red;
+  font-size: 5rem;
+  text-align: center;
+}
+
+img:hover {
+  background-color: gold;
+}
+
+p {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/******* CLASS SELECTORS *******/
+
+.bacon {
+  background-color: green;
+  display: block;
+  margin: auto;
+  width: 10rem;
+}
+
+.broccoli {
+  background-color: red;
+  display: block;
+  margin: auto;
+  width: 10rem;
+}
+
+.circular {
+  border-radius: 100%;
+}
+
+.food-images {
+  text-align: center;
+}
+
+/******* ID SELECTORS *******/
+
+#heading {
+  color: red;
+}
+
+#heading-second {
+  color: blue;
+}
