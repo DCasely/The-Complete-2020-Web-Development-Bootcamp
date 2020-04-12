@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <title>TinDog</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap CDN -->
     <link
       rel="stylesheet"
@@ -10,7 +17,15 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- JS for Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- JS for Bootstrap -->
     <script
@@ -32,64 +47,100 @@
   </head>
 
   <body>
+    <!-- ========================= -->
+    <!-- TITLE -->
+    <!-- ========================= -->
     <section id="title">
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="" class="navbar-brand">tindog</a>
+      <div class="container-fluid">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="" class="navbar-brand">tindog</a>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Download</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Download</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- NAVBAR -->
+        <div id="title-section" class="row">
+          <!-- headline and buttons -->
+          <div class="col-lg-6">
+            <h1>Meet new and interesting dogs nearby.</h1>
+
+            <!-- apple download button -->
+            <button class="btn btn-dark btn-lg download-button" type="button">
+              <i class="fab fa-apple"></i> Download
+            </button>
+
+            <!-- google play download button -->
+            <button
+              class="btn btn-outline-light btn-lg download-button"
+              type="button"
+            >
+              <i class="fab fa-google-play"></i> Download
+            </button>
+          </div>
+
+          <!-- iphone image -->
+          <div class="col-lg-6">
+            <img
+              class="iphone-img"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
+          </div>
         </div>
-      </nav>
-
-      <!-- Title -->
-
-      <div>
-        <h1>Meet new and interesting dogs nearby.</h1>
-        <button type="button">Download</button>
-        <button type="button">Download</button>
-      </div>
-      <div>
-        <img src="images/iphone6.png" alt="iphone-mockup" />
       </div>
     </section>
 
-    <!-- Features -->
-
+    <!-- ========================= -->
+    <!-- FEATURES -->
+    <!-- ========================= -->
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="feature-icons fas fa-check-circle fa-4x"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="feature-icons fas fa-bullseye fa-4x"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="feature-icons fas fa-heart fa-4x"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials -->
+    <!-- ========================= -->
+    <!-- TESTIMONIALS -->
+    <!-- ========================= -->
 
     <section id="testimonials">
       <h2>
@@ -104,8 +155,9 @@
     <em>Beverly, Illinois</em> -->
     </section>
 
-    <!-- Press -->
-
+    <!-- ========================= -->
+    <!-- PRESS -->
+    <!-- ========================= -->
     <section id="press">
       <img src="images/techcrunch.png" alt="tc-logo" />
       <img src="images/tnw.png" alt="tnw-logo" />
@@ -113,7 +165,9 @@
       <img src="images/mashable.png" alt="mashable-logo" />
     </section>
 
-    <!-- Pricing -->
+    <!-- ========================= -->
+    <!-- PRICING -->
+    <!-- ========================= -->
 
     <section id="pricing">
       <h2>A Plan for Every Dog's Needs</h2>
@@ -142,7 +196,9 @@
       <button type="button">Sign Up</button>
     </section>
 
-    <!-- Call to Action -->
+    <!-- ========================= -->
+    <!-- CALL TO ACTION -->
+    <!-- ========================= -->
 
     <section id="cta">
       <h3>Find the True Love of Your Dog's Life Today.</h3>
@@ -150,7 +206,9 @@
       <button type="button">Download</button>
     </section>
 
-    <!-- Footer -->
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
 
     <footer id="footer">
       <p>© Copyright 2018 TinDog</p>
