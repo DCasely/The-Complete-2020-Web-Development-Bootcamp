@@ -1,0 +1,88 @@
+body {
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #8f8f8f;
+}
+/* =================================== */
+/* NAVBAR */
+/* =================================== */
+
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+  font-size: 3.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item {
+  padding: 0 1.1rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+/* =================================== */
+/* TITLE */
+/* =================================== */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* DOWNLOAD BUTTONS */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* IPHONE IMAGE */
+
+.iphone-img {
+  width: 60%;
+  transform: rotate(20deg);
+}
+
+/* =================================== */
+/* FEATURES */
+/* =================================== */
+
+#features {
+  padding: 7% 3.5%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+.feature-icons {
+  color: #ef8172;
+  margin: 0 0 1rem 0;
+}
+
+.feature-icons:hover {
+  color: #ff4c68;
+}
