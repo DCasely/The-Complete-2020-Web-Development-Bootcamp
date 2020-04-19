@@ -4,7 +4,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -69,7 +69,9 @@ p {
 
 .iphone-img {
   width: 60%;
-  transform: rotate(20deg);
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* =================================== */
@@ -77,6 +79,8 @@ p {
 /* =================================== */
 
 #features {
+  background-color: #fff;
+  position: relative;
   padding: 7% 3.5%;
 }
 
