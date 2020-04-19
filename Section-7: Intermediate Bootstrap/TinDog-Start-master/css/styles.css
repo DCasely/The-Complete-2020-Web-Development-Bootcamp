@@ -35,6 +35,17 @@ p {
   padding: 7% 15%;
 }
 
+/* SECTIONS */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
 /* =================================== */
 /* TITLE */
 /* =================================== */
@@ -61,15 +72,11 @@ p {
 
 /* TITLE */
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-  text-align: left;
-}
-
 #title .container-fluid {
+  text-align: left;
   padding-top: 3%;
 }
+
 /* DOWNLOAD BUTTONS */
 
 .download-button {
@@ -90,7 +97,6 @@ p {
 /* =================================== */
 
 #features {
-  background-color: #fff;
   position: relative;
 }
 
@@ -113,7 +119,6 @@ p {
 
 #testimonials {
   background-color: #ef8172;
-  color: #fff;
 }
 
 .testimonial-text {
@@ -161,10 +166,6 @@ p {
 /* =================================== */
 /* CALL TO ACTION */
 /* =================================== */
-
-#cta {
-  background-color: #ff4c68;
-}
 
 #cta h3 {
   color: #fff;
