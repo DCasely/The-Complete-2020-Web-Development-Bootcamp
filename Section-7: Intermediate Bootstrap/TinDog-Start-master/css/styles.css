@@ -144,3 +144,48 @@ p {
 .pricing-column {
   padding: 3% 2%;
 }
+
+/* =================================== */
+/* CALL TO ACTION */
+/* =================================== */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 10% 5%;
+}
+
+#cta h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#cta button {
+  margin: 2.5%;
+}
+
+/* =================================== */
+/* FOOTER */
+/* =================================== */
+
+#footer {
+  padding: 5% 0;
+}
+
+#footer .social-media-icons {
+  margin: 2.5%;
+}
+
+/* =================================== */
+/* MEDIA QUERIES */
+/* =================================== */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .iphone-img {
+    position: static;
+    transform: rotate(0);
+  }
+}
