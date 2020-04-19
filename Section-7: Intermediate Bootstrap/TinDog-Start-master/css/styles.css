@@ -1,5 +1,4 @@
 body {
-  /* font-family: 'Ubuntu', sans-serif; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -7,14 +6,8 @@ body {
   padding: 3% 15% 7%;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
+h1,
 h2 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 3rem;
   line-height: 1.5;
@@ -139,6 +132,7 @@ p {
 
 #pricing {
   padding: 100px;
+  text-align: center;
 }
 
 .pricing-column {
