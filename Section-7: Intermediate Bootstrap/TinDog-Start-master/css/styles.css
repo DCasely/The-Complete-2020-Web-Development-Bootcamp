@@ -1,29 +1,45 @@
 body {
   font-family: 'Montserrat', sans-serif;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
+  text-align: center;
 }
 
 h1,
-h2 {
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
-  font-size: 1.5rem;
 }
 
 p {
   color: #8f8f8f;
 }
+
+/* HEADINGS */
+
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* CONTAINERS */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
 /* =================================== */
+/* TITLE */
+/* =================================== */
+
 /* NAVBAR */
-/* =================================== */
 
 .navbar {
   padding: 0 0 4.5rem 0;
@@ -43,15 +59,17 @@ p {
   font-weight: 200;
 }
 
-/* =================================== */
 /* TITLE */
-/* =================================== */
 
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
 }
 
+#title .container-fluid {
+  padding-top: 3%;
+}
 /* DOWNLOAD BUTTONS */
 
 .download-button {
@@ -74,12 +92,10 @@ p {
 #features {
   background-color: #fff;
   position: relative;
-  padding: 7% 3.5%;
 }
 
-.feature-box {
-  text-align: center;
-  padding: 5%;
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .feature-icons {
@@ -96,9 +112,13 @@ p {
 /* =================================== */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -107,17 +127,12 @@ p {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* =================================== */
 /* PRESS */
 /* =================================== */
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -132,7 +147,11 @@ p {
 
 #pricing {
   padding: 100px;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-column {
@@ -145,7 +164,6 @@ p {
 
 #cta {
   background-color: #ff4c68;
-  padding: 10% 5%;
 }
 
 #cta h3 {
@@ -160,10 +178,6 @@ p {
 /* =================================== */
 /* FOOTER */
 /* =================================== */
-
-#footer {
-  padding: 5% 0;
-}
 
 #footer .social-media-icons {
   margin: 2.5%;
