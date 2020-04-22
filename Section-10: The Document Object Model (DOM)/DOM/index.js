@@ -50,3 +50,10 @@
 
 // console.log((document.getElementById('title').innerHTML = '<em>Good Bye</em>'));
 // console.log((document.getElementById('title').textContent = 'Hello'));
+
+console.log(document.querySelector('a').attributes);
+console.log(document.querySelector('a').getAttribute('href'));
+console.log(
+  document.querySelector('a').setAttribute('href', 'https//www.google.com')
+);
+console.log(document.querySelector('a').getAttribute('href'));
