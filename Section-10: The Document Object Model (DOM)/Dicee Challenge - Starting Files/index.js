@@ -1,4 +1,4 @@
-document.querySelector('#reset').addEventListener('click', function () {
+document.querySelector('body').addEventListener('click', function () {
   rollDice();
   rollDice2();
 
