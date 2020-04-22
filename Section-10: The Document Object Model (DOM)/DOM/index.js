@@ -30,12 +30,20 @@
 
 // document.querySelector('#list a').style.color = 'red';
 
-document.querySelector('h1').style.color = 'red';
+// document.querySelector('h1').style.color = 'red';
 
-document.querySelector('h1').style.fontSize = '3rem';
+// document.querySelector('h1').style.fontSize = '3rem';
 
-document.querySelector('h1').style.padding = '1rem 5rem';
+// document.querySelector('h1').style.padding = '1rem 5rem';
 
-// document.querySelector('h1').style.visibility = 'hidden';
+// // document.querySelector('h1').style.visibility = 'hidden';
 
-document.querySelector('.btn').style.backgroundColor = 'yellow';
+// document.querySelector('.btn').style.backgroundColor = 'yellow';
+
+// console.log(document.querySelector('button').classList);
+// console.log(document.querySelector('button').classList.add('invisible'));
+// console.log(document.querySelector('button').classList.remove('invisible'));
+// console.log(document.querySelector('button').classList.toggle('invisible'));
+// console.log(document.querySelector('button').classList.toggle('invisible'));
+
+// console.log(document.querySelector('h1').classList.add('huge'));
