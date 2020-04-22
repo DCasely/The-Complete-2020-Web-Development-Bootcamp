@@ -35,9 +35,9 @@ function rollDice2() {
 
 function winner() {
   if (player1Dice > player2Dice) {
-    return (document.querySelector('h1').innerHTML = 'Player 1 Wins');
+    return (document.querySelector('h1').innerHTML = '🚩 Player 1 Wins');
   } else if (player2Dice > player1Dice) {
-    return (document.querySelector('h1').innerHTML = 'Player 2 Wins');
+    return (document.querySelector('h1').innerHTML = 'Player 2 Wins 🚩');
   } else {
     return (document.querySelector('h1').innerHTML = 'Draw');
   }
