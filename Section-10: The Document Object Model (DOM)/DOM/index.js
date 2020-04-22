@@ -47,3 +47,6 @@
 // console.log(document.querySelector('button').classList.toggle('invisible'));
 
 // console.log(document.querySelector('h1').classList.add('huge'));
+
+// console.log((document.getElementById('title').innerHTML = '<em>Good Bye</em>'));
+// console.log((document.getElementById('title').textContent = 'Hello'));
