@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <!-- BOOTSTRAP CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css"
+    /> -->
 
+    <!-- CUSTOM CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <div class="container">
-      <h1>Refresh Me</h1>
+      <div>
+        <h1>Roll The Dice</h1>
+        <button id="reset" class="btn btn-primary">
+          <a href="#">Roll The Dice</a>
+        </button>
+      </div>
 
       <div class="dice">
         <p>Player 1</p>
-        <img class="img1" src="">
+        <img class="img1" src="./images/dice6.png" />
       </div>
 
       <div class="dice">
         <p>Player 2</p>
-        <img class="img2" src="">
+        <img class="img2" src="./images/dice6.png" />
       </div>
-
     </div>
 
-
+    <script src="./index.js"></script>
   </body>
 
   <footer>
-    www 🎲 App Brewery 🎲 com
+    www.TheCaselyGroup.com
   </footer>
 </html>
