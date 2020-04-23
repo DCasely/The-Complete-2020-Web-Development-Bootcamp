@@ -1,5 +1,7 @@
-document.querySelector('button').addEventListener('click', handleClick);
+let drums = document.querySelectorAll('.drum');
 
-function handleClick() {
-  document.querySelector('body').style.backgroundColor = 'Red';
-}
+drums.forEach((drum) =>
+  drum.addEventListener('click', function () {
+    alert('I was clicked');
+  })
+);
