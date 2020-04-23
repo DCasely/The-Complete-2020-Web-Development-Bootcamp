@@ -7,9 +7,53 @@ let drums = document.querySelectorAll('.drum');
 //   });
 // }
 
+// AUDIOS
+let tom1Audio = new Audio('./sounds/tom-1.mp3');
+let tom2Audio = new Audio('./sounds/tom-2.mp3');
+let tom3Audio = new Audio('./sounds/tom-3.mp3');
+let tom4Audio = new Audio('./sounds/tom-4.mp3');
+let snareAudio = new Audio('./sounds/snare.mp3');
+let crashAudio = new Audio('./sounds/crash.mp3');
+let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
+
+// PLAY AUDIO
 drums.forEach((drum) =>
   drum.addEventListener('click', function () {
-    this.style.color = '#fff';
+    let buttonInnerHTML = this.innerHTML;
+
+    switch (buttonInnerHTML) {
+      case 'w':
+        tom1Audio.play();
+        break;
+
+      case 'a':
+        tom2Audio.play();
+        break;
+
+      case 's':
+        tom3Audio.play();
+        break;
+
+      case 'd':
+        tom4Audio.play();
+        break;
+
+      case 'j':
+        snareAudio.play();
+        break;
+
+      case 'k':
+        crashAudio.play();
+        break;
+
+      case 'l':
+        kickBass.play();
+        break;
+
+      default:
+        console.log(buttonInnerHTML);
+        break;
+    }
   })
 );
 
@@ -24,65 +68,57 @@ let audios = {
   kickBassAudio: new Audio('./sounds/kick-bass.mp3'),
 };
 
-let tom1Audio = new Audio('./sounds/tom-1.mp3');
-let tom2Audio = new Audio('./sounds/tom-2.mp3');
-let tom3Audio = new Audio('./sounds/tom-3.mp3');
-let tom4Audio = new Audio('./sounds/tom-4.mp3');
-let snareAudio = new Audio('./sounds/snare.mp3');
-let crashAudio = new Audio('./sounds/crash.mp3');
-let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
+// // EVENT LISTENERS FOR CORRESPONDING SOUNDS
+// let tom1 = document
+//   .querySelector('.w')
+//   .addEventListener('click', playTom1Audio);
 
-// EVENT LISTENERS FOR CORRESPONDING SOUNDS
-let tom1 = document
-  .querySelector('.w')
-  .addEventListener('click', playTom1Audio);
+// let tom2 = document
+//   .querySelector('.a')
+//   .addEventListener('click', playTom2Audio);
 
-let tom2 = document
-  .querySelector('.a')
-  .addEventListener('click', playTom2Audio);
+// let tom3 = document
+//   .querySelector('.s')
+//   .addEventListener('click', playTom3Audio);
 
-let tom3 = document
-  .querySelector('.s')
-  .addEventListener('click', playTom3Audio);
+// let tom4 = document
+//   .querySelector('.d')
+//   .addEventListener('click', playTom4Audio);
 
-let tom4 = document
-  .querySelector('.d')
-  .addEventListener('click', playTom4Audio);
+// let snare = document
+//   .querySelector('.j')
+//   .addEventListener('click', playSnareAudio);
 
-let snare = document
-  .querySelector('.j')
-  .addEventListener('click', playSnareAudio);
+// let crash = document
+//   .querySelector('.k')
+//   .addEventListener('click', playCrashAudio);
 
-let crash = document
-  .querySelector('.k')
-  .addEventListener('click', playCrashAudio);
+// let kickBass = document
+//   .querySelector('.l')
+//   .addEventListener('click', playKickBassAudio);
 
-let kickBass = document
-  .querySelector('.l')
-  .addEventListener('click', playKickBassAudio);
-
-// AUDIO FUNCTIONS
-function playTom1Audio() {
-  tom1Audio.play();
-}
-function playTom2Audio() {
-  tom2Audio.play();
-}
-function playTom3Audio() {
-  tom3Audio.play();
-}
-function playTom4Audio() {
-  tom4Audio.play();
-}
-function playSnareAudio() {
-  snareAudio.play();
-}
-function playCrashAudio() {
-  crashAudio.play();
-}
-function playKickBassAudio() {
-  kickBassAudio.play();
-}
+// // AUDIO FUNCTIONS
+// function playTom1Audio() {
+//   tom1Audio.play();
+// }
+// function playTom2Audio() {
+//   tom2Audio.play();
+// }
+// function playTom3Audio() {
+//   tom3Audio.play();
+// }
+// function playTom4Audio() {
+//   tom4Audio.play();
+// }
+// function playSnareAudio() {
+//   snareAudio.play();
+// }
+// function playCrashAudio() {
+//   crashAudio.play();
+// }
+// function playKickBassAudio() {
+//   kickBassAudio.play();
+// }
 
 // =========================================
 
@@ -109,16 +145,16 @@ function playKickBassAudio() {
 
 // PRACTICE - HOUSEKEEPER
 
-// CONSTRUCTOR FUNCTION
-function HouseKeeper(name, age, experience, languages) {
-  this.name = name;
-  this.age = age;
-  this.experience = experience;
-  this.languages = languages;
-}
+// // CONSTRUCTOR FUNCTION
+// function HouseKeeper(name, age, experience, languages) {
+//   this.name = name;
+//   this.age = age;
+//   this.experience = experience;
+//   this.languages = languages;
+// }
 
-// INITIALIZE A HOUSEKEEPER
-let houseKeeper1 = new HouseKeeper('Jacky', 45, false, 'english');
+// // INITIALIZE A HOUSEKEEPER
+// let houseKeeper1 = new HouseKeeper('Jacky', 45, false, 'english');
 
 // let housekeeper = {
 //   name: 'Kimberly',
