@@ -19,7 +19,7 @@ let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
 // PLAY AUDIO ON CLICK
 drums.forEach((drum) =>
   drum.addEventListener('click', function () {
-    playAudio(this.innerHTML);
+    playAudio(drum.innerHTML);
   })
 );
 
