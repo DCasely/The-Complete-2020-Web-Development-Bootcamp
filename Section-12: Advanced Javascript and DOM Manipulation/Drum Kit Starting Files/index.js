@@ -1,28 +1,98 @@
+// ALL DRUMS
 let drums = document.querySelectorAll('.drum');
 
-drums.forEach((drum) => drum.addEventListener('click', iGotClicked));
+// for (var i = 0; i < drums.length; i++) {
+//   drums[i].addEventListener('click', function () {
+//     this.style.color = '#fff';
+//   });
+// }
 
-function iGotClicked() {
-  alert('I was clicked');
+drums.forEach((drum) =>
+  drum.addEventListener('click', function () {
+    this.style.color = '#fff';
+  })
+);
+
+// AUDIO OBJECTS
+let tom1Audio = new Audio('./sounds/tom-1.mp3');
+let tom2Audio = new Audio('./sounds/tom-2.mp3');
+let tom3Audio = new Audio('./sounds/tom-3.mp3');
+let tom4Audio = new Audio('./sounds/tom-4.mp3');
+let snareAudio = new Audio('./sounds/snare.mp3');
+let crashAudio = new Audio('./sounds/crash.mp3');
+let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
+
+// EVENT LISTENERS FOR CORRESPONDING SOUNDS
+let tom1 = document
+  .querySelector('.w')
+  .addEventListener('click', playTom1Audio);
+
+let tom2 = document
+  .querySelector('.a')
+  .addEventListener('click', playTom2Audio);
+
+let tom3 = document
+  .querySelector('.s')
+  .addEventListener('click', playTom3Audio);
+
+let tom4 = document
+  .querySelector('.d')
+  .addEventListener('click', playTom4Audio);
+
+let snare = document
+  .querySelector('.j')
+  .addEventListener('click', playSnareAudio);
+
+let crash = document
+  .querySelector('.k')
+  .addEventListener('click', playCrashAudio);
+
+let kickBass = document
+  .querySelector('.l')
+  .addEventListener('click', playKickBassAudio);
+
+// AUDIO FUNCTIONS
+function playTom1Audio() {
+  tom1Audio.play();
 }
+function playTom2Audio() {
+  tom2Audio.play();
+}
+function playTom3Audio() {
+  tom3Audio.play();
+}
+function playTom4Audio() {
+  tom4Audio.play();
+}
+function playSnareAudio() {
+  snareAudio.play();
+}
+function playCrashAudio() {
+  crashAudio.play();
+}
+function playKickBassAudio() {
+  kickBassAudio.play();
+}
+
+// =========================================
 
 // CALCULATOR FUNCTIONS
-function add(num1, num2) {
-  return num1 + num2;
-}
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
 
-function subtract(num1, num2) {
-  return num1 - num2;
-}
+// function subtract(num1, num2) {
+//   return num1 - num2;
+// }
 
-function multiply(num1, num2) {
-  return num1 * num2;
-}
+// function multiply(num1, num2) {
+//   return num1 * num2;
+// }
 
-function divide(num1, num2) {
-  return num1 / num2;
-}
+// function divide(num1, num2) {
+//   return num1 / num2;
+// }
 
-function calculator(num1, num2, operator) {
-  return operator(num1, num2);
-}
+// function calculator(num1, num2, operator) {
+//   return operator(num1, num2);
+// }
