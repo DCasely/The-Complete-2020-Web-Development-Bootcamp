@@ -16,57 +16,104 @@ let snareAudio = new Audio('./sounds/snare.mp3');
 let crashAudio = new Audio('./sounds/crash.mp3');
 let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
 
-// PLAY AUDIO
+// PLAY AUDIO ON CLICK
 drums.forEach((drum) =>
   drum.addEventListener('click', function () {
-    let buttonInnerHTML = this.innerHTML;
-
-    switch (buttonInnerHTML) {
-      case 'w':
-        tom1Audio.play();
-        break;
-
-      case 'a':
-        tom2Audio.play();
-        break;
-
-      case 's':
-        tom3Audio.play();
-        break;
-
-      case 'd':
-        tom4Audio.play();
-        break;
-
-      case 'j':
-        snareAudio.play();
-        break;
-
-      case 'k':
-        crashAudio.play();
-        break;
-
-      case 'l':
-        kickBass.play();
-        break;
-
-      default:
-        console.log(buttonInnerHTML);
-        break;
-    }
+    playAudio(this.innerHTML);
   })
 );
 
-// AUDIO OBJECTS
-let audios = {
-  tom1Audio: new Audio('./sounds/tom-1.mp3'),
-  tom2Audio: new Audio('./sounds/tom-2.mp3'),
-  tom3Audio: new Audio('./sounds/tom-3.mp3'),
-  tom4Audio: new Audio('./sounds/tom-4.mp3'),
-  snareAudio: new Audio('./sounds/snare.mp3'),
-  crashAudio: new Audio('./sounds/crash.mp3'),
-  kickBassAudio: new Audio('./sounds/kick-bass.mp3'),
-};
+// PLAY AUDIO ON KEYDOWN
+document.addEventListener('keydown', (e) => {
+  playAudio(e.key);
+});
+
+// PLAY AUDIO FUNCTION
+function playAudio(e) {
+  switch (e) {
+    case 'w':
+      tom1Audio.play();
+      break;
+
+    case 'a':
+      tom2Audio.play();
+      break;
+
+    case 's':
+      tom3Audio.play();
+      break;
+
+    case 'd':
+      tom4Audio.play();
+      break;
+
+    case 'j':
+      snareAudio.play();
+      break;
+
+    case 'k':
+      crashAudio.play();
+      break;
+
+    case 'l':
+      kickBassAudio.play();
+      break;
+
+    default:
+      console.log(buttonInnerHTML);
+      break;
+  }
+}
+
+// document.addEventListener('keydown', function () {
+//     let buttonInnerHTML = this.innerHTML;
+
+//     switch (buttonInnerHTML) {
+//       case 'w':
+//         tom1Audio.play();
+//         break;
+
+//       case 'a':
+//         tom2Audio.play();
+//         break;
+
+//       case 's':
+//         tom3Audio.play();
+//         break;
+
+//       case 'd':
+//         tom4Audio.play();
+//         break;
+
+//       case 'j':
+//         snareAudio.play();
+//         break;
+
+//       case 'k':
+//         crashAudio.play();
+//         break;
+
+//       case 'l':
+//         kickBassAudio.play();
+//         break;
+
+//       default:
+//         console.log(buttonInnerHTML);
+//         break;
+//     }
+//   })
+// );
+
+// // AUDIO OBJECTS
+// let audios = {
+//   tom1Audio: new Audio('./sounds/tom-1.mp3'),
+//   tom2Audio: new Audio('./sounds/tom-2.mp3'),
+//   tom3Audio: new Audio('./sounds/tom-3.mp3'),
+//   tom4Audio: new Audio('./sounds/tom-4.mp3'),
+//   snareAudio: new Audio('./sounds/snare.mp3'),
+//   crashAudio: new Audio('./sounds/crash.mp3'),
+//   kickBassAudio: new Audio('./sounds/kick-bass.mp3'),
+// };
 
 // // EVENT LISTENERS FOR CORRESPONDING SOUNDS
 // let tom1 = document
@@ -146,12 +193,15 @@ let audios = {
 // PRACTICE - HOUSEKEEPER
 
 // // CONSTRUCTOR FUNCTION
-// function HouseKeeper(name, age, experience, languages) {
-//   this.name = name;
-//   this.age = age;
-//   this.experience = experience;
-//   this.languages = languages;
-// }
+function HouseKeeper(name, age, experience, languages) {
+  this.name = name;
+  this.age = age;
+  this.experience = experience;
+  this.languages = languages;
+  this.clean = function () {
+    alert('Cleaning in progress');
+  };
+}
 
 // // INITIALIZE A HOUSEKEEPER
 // let houseKeeper1 = new HouseKeeper('Jacky', 45, false, 'english');
