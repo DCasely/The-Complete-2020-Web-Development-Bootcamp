@@ -14,6 +14,16 @@ drums.forEach((drum) =>
 );
 
 // AUDIO OBJECTS
+let audios = {
+  tom1Audio: new Audio('./sounds/tom-1.mp3'),
+  tom2Audio: new Audio('./sounds/tom-2.mp3'),
+  tom3Audio: new Audio('./sounds/tom-3.mp3'),
+  tom4Audio: new Audio('./sounds/tom-4.mp3'),
+  snareAudio: new Audio('./sounds/snare.mp3'),
+  crashAudio: new Audio('./sounds/crash.mp3'),
+  kickBassAudio: new Audio('./sounds/kick-bass.mp3'),
+};
+
 let tom1Audio = new Audio('./sounds/tom-1.mp3');
 let tom2Audio = new Audio('./sounds/tom-2.mp3');
 let tom3Audio = new Audio('./sounds/tom-3.mp3');
@@ -96,3 +106,23 @@ function playKickBassAudio() {
 // function calculator(num1, num2, operator) {
 //   return operator(num1, num2);
 // }
+
+// PRACTICE - HOUSEKEEPER
+
+// CONSTRUCTOR FUNCTION
+function HouseKeeper(name, age, experience, languages) {
+  this.name = name;
+  this.age = age;
+  this.experience = experience;
+  this.languages = languages;
+}
+
+// INITIALIZE A HOUSEKEEPER
+let houseKeeper1 = new HouseKeeper('Jacky', 45, false, 'english');
+
+// let housekeeper = {
+//   name: 'Kimberly',
+//   age: '27',
+//   experience: true,
+//   languages: ['english', 'spanish'],
+// };
