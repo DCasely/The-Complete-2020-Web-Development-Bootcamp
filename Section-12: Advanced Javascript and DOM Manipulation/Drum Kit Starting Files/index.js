@@ -18,14 +18,16 @@ let kickBassAudio = new Audio('./sounds/kick-bass.mp3');
 
 // PLAY AUDIO ON CLICK
 drums.forEach((drum) =>
-  drum.addEventListener('click', function () {
+  drum.addEventListener('click', () => {
     playAudio(drum.innerHTML);
+    buttonAnimation(drum.innerHTML);
   })
 );
 
 // PLAY AUDIO ON KEYDOWN
 document.addEventListener('keydown', (e) => {
   playAudio(e.key);
+  buttonAnimation(e.key);
 });
 
 // PLAY AUDIO FUNCTION
@@ -63,6 +65,17 @@ function playAudio(e) {
       console.log(buttonInnerHTML);
       break;
   }
+}
+
+// BUTTON ANIMATION
+function buttonAnimation(currentKey) {
+  let activeButton = document.querySelector(`.${currentKey}`);
+
+  activeButton.classList.add('pressed');
+
+  setTimeout(function () {
+    activeButton.classList.remove('pressed');
+  }, 100);
 }
 
 // document.addEventListener('keydown', function () {
@@ -193,15 +206,15 @@ function playAudio(e) {
 // PRACTICE - HOUSEKEEPER
 
 // // CONSTRUCTOR FUNCTION
-function HouseKeeper(name, age, experience, languages) {
-  this.name = name;
-  this.age = age;
-  this.experience = experience;
-  this.languages = languages;
-  this.clean = function () {
-    alert('Cleaning in progress');
-  };
-}
+// function HouseKeeper(name, age, experience, languages) {
+//   this.name = name;
+//   this.age = age;
+//   this.experience = experience;
+//   this.languages = languages;
+//   this.clean = function () {
+//     alert('Cleaning in progress');
+//   };
+// }
 
 // // INITIALIZE A HOUSEKEEPER
 // let houseKeeper1 = new HouseKeeper('Jacky', 45, false, 'english');
