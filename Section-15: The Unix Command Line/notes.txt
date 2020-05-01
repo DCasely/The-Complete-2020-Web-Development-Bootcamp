@@ -1,1 +1,7 @@
 THE COMMAND LINE
+
+Place a dot in front of folder name to make it hidden (example: .secretfolder)
+
+CONTROL + A > Takes you to the beginning of the terminal statement
+CONTROL + E > Takes you to the end of the terminal statement
+CONTROL + U > Clears the terminal statement
