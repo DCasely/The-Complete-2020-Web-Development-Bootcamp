@@ -2,14 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SKELETON -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
     />
 
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form action="/" method="post">
+        <label for="cityInput">City Name: </label>
+        <input id="cityInput" type="text" name="cityName" />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+  </body>
 </html>
